@@ -1,8 +1,7 @@
 #include<iostream>
 #include<vector>
-#define max 30
 using namespace std;
-void bubblesort(int arr[],int n)
+void bubblesort(vector<int>&arr,int n)
 {
    int flag;
    for(int i=0;i<n-1;i++)
@@ -22,9 +21,9 @@ void bubblesort(int arr[],int n)
 int main()
 {
     int n;
-    int arr [max];
     cout <<"Enter number of elements: ";
     cin >> n;
+    vector<int> arr(n);
     cout<<"Enter all the elements"<<endl;
     for(int i=0;i<n;i++)
     cin >> arr[i];
